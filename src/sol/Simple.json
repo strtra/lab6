@@ -1,0 +1,413 @@
+{
+  "contractName": "Simple",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "manager",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"manager\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Simple.sol\":\"Simple\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Simple.sol\":{\"keccak256\":\"0x1ec99d8d0dc0d253d5f18bfb84de602f631be5fa2c34fb2d94eca1f03ddb5bc9\",\"urls\":[\"bzz-raw://27d4d620c0ca7ae7692e0cbc0fbc3bf6259528dd394c8a679ff7836e3421c1fb\",\"dweb:/ipfs/QmXRyMSjbJ7ZqepCxPWcdUFEUC8GbiJWbBXVTuQGZa2jhf\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060ec8061005f6000396000f3fe6080604052348015600f57600080fd5b50600436106045576000357c010000000000000000000000000000000000000000000000000000000090048063481c6a7514604a575b600080fd5b60506092565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820088b490a53a62313b303ed07e4ba3c3c782d8fa218fb1e86fd48dadcc7d8fc3864736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b50600436106045576000357c010000000000000000000000000000000000000000000000000000000090048063481c6a7514604a575b600080fd5b60506092565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea265627a7a72315820088b490a53a62313b303ed07e4ba3c3c782d8fa218fb1e86fd48dadcc7d8fc3864736f6c63430005100032",
+  "sourceMap": "80:115:0:-;;;132:60;8:9:-1;5:2;;;30:1;27;20:12;5:2;132:60:0;174:10;164:7;;:20;;;;;;;;;;;;;;;;;;80:115;;;;;;",
+  "deployedSourceMap": "80:115:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;80:115:0;;;;;;;;;;;;;;;;;;;;103:22;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// SPDX-License-Identifier: SEE LICENSE IN LICENSE\r\npragma solidity ^0.5.16;\r\n\r\ncontract Simple {\r\n    address public manager;\r\n    constructor() public {\r\n        manager = msg.sender;\r\n    }\r\n}\r\n",
+  "sourcePath": "C:\\Users\\Admin\\Desktop\\labs\\lab6\\contracts\\Simple.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Simple.sol",
+    "exportedSymbols": {
+      "Simple": [
+        13
+      ]
+    },
+    "id": 14,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "52:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 13,
+        "linearizedBaseContracts": [
+          13
+        ],
+        "name": "Simple",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "manager",
+            "nodeType": "VariableDeclaration",
+            "scope": 13,
+            "src": "103:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "103:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 11,
+              "nodeType": "Block",
+              "src": "153:39:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 9,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 6,
+                      "name": "manager",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3,
+                      "src": "164:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 7,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 28,
+                        "src": "174:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 8,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "174:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "164:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 10,
+                  "nodeType": "ExpressionStatement",
+                  "src": "164:20:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 12,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "143:2:0"
+            },
+            "returnParameters": {
+              "id": 5,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "153:0:0"
+            },
+            "scope": 13,
+            "src": "132:60:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 14,
+        "src": "80:115:0"
+      }
+    ],
+    "src": "52:145:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/Simple.sol",
+      "exportedSymbols": {
+        "Simple": [
+          13
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "52:24:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            13
+          ],
+          "name": "Simple",
+          "scope": 14
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "manager",
+              "scope": 13,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 2,
+                "name": "ElementaryTypeName",
+                "src": "103:7:0"
+              }
+            ],
+            "id": 3,
+            "name": "VariableDeclaration",
+            "src": "103:22:0"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 13,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 4,
+                "name": "ParameterList",
+                "src": "143:2:0"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 5,
+                "name": "ParameterList",
+                "src": "153:0:0"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "address"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 3,
+                              "type": "address",
+                              "value": "manager"
+                            },
+                            "id": 6,
+                            "name": "Identifier",
+                            "src": "164:7:0"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "member_name": "sender",
+                              "referencedDeclaration": null,
+                              "type": "address payable"
+                            },
+                            "children": [
+                              {
+                                "attributes": {
+                                  "argumentTypes": null,
+                                  "overloadedDeclarations": [
+                                    null
+                                  ],
+                                  "referencedDeclaration": 28,
+                                  "type": "msg",
+                                  "value": "msg"
+                                },
+                                "id": 7,
+                                "name": "Identifier",
+                                "src": "174:3:0"
+                              }
+                            ],
+                            "id": 8,
+                            "name": "MemberAccess",
+                            "src": "174:10:0"
+                          }
+                        ],
+                        "id": 9,
+                        "name": "Assignment",
+                        "src": "164:20:0"
+                      }
+                    ],
+                    "id": 10,
+                    "name": "ExpressionStatement",
+                    "src": "164:20:0"
+                  }
+                ],
+                "id": 11,
+                "name": "Block",
+                "src": "153:39:0"
+              }
+            ],
+            "id": 12,
+            "name": "FunctionDefinition",
+            "src": "132:60:0"
+          }
+        ],
+        "id": 13,
+        "name": "ContractDefinition",
+        "src": "80:115:0"
+      }
+    ],
+    "id": 14,
+    "name": "SourceUnit",
+    "src": "52:145:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xC6805B67d4d8D61D6DD68920afb89549ae725e11",
+      "transactionHash": "0x8c1d9b6ffe86c84895fd6cde0c880cc23f242329837bf817f5d53b18ce86be7a"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2026-11-12T08:39:30.562Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
